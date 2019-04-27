@@ -81,6 +81,13 @@ REST_FRAMEWORK = {
 }
 
 
+#Pagination allows you to control how many objects per page are returned
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
+
+
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
