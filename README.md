@@ -34,8 +34,9 @@ Event's basic info, filter info
 
 ## POST Add Event
 **A new event should be updated to both Event and User**
-INSERT INTO Event (All column) VALUES (\*)
-INSERT INTO User (events) VALUES (ref, event basic info)
+
+	INSERT INTO Event (All column) VALUES (*)
+	INSERT INTO User (events) VALUES (ref, event basic info)
 
 ## GET Rating / comment
 Event's rating list
@@ -43,8 +44,9 @@ Event's comment list
 
 ## POST Add Rating / comment
 **A new comment and a rating should be updated to both Event and User**
-INSERT INTO Event (ratings) VALUES (\*)
-INSERT INTO User (ratings) VALUES (\*)
+
+	INSERT INTO Event (ratings) VALUES (*)
+	INSERT INTO User (ratings) VALUES (*)
 
 ## GET Friend List
 User's friend list
@@ -60,22 +62,22 @@ Participation: eid, uid, comment, rating, host / participate
 Friendship: uid, uid
 
 ## Event
-{
-	eid,
-	basic info: { name:, desc:, rating:, host:, },
-	filter info: { type:, time:, location:, },
-	ratings: [ { user (ref), username, rating, time} ],
-	comments: [ { user (ref), username, comment, time} ],
-}
+	{
+		eid,
+		basic info: { name:, desc:, rating:, host:, },
+		filter info: { type:, time:, location:, },
+		ratings: [ { user (ref), username, rating, time} ],
+		comments: [ { user (ref), username, comment, time} ],
+	}
 
 ## User
-{
-	uid,
-	basic info: {},
-	filter info: {},
-	ratings: [],
-	comments: [],
-}
+	{
+		uid,
+		basic info: {},
+		filter info: {},
+		ratings: [],
+		comments: [],
+	}
 
 
 
