@@ -1,16 +1,16 @@
 
 # Pages
 
-+Stream
-	-Filter
-+Add Event
-	-Info
-	-Loc
-+View Event
-	-rating
-	-Comment
-+Chat
-+User Management
++ Stream
+	- Filter
++ Add Event
+	- Info
+	- Loc
++ View Event
+	- rating
+	- Comment
++ Chat
++ User Management
 
 
 # Naming Convension:
@@ -75,9 +75,9 @@ User's event list (rating / comment)
 
 # Data Model
 
-+Event-[N-N:Relation]-User-[N:N]-User
-+Participation: eid, uid, comment, rating, host / participate
-+Friendship: uid, uid
++ Event-[N-N:Relation]-User-[N:N]-User
++ Participation: eid, uid, comment, rating, host / participate
++ Friendship: uid, uid
 
 
 ## Event
