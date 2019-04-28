@@ -1,4 +1,4 @@
-# from django.db import models
+from django.db import models
 # from mongoengine import Document, EmbeddedDocument, fields
 
 ### THE EVENT CATEGORY ###
@@ -17,6 +17,17 @@
 
 #          }
 
+
+class Event(models.Model):
+    json_text = models.TextField(
+        max_length=500,
+        # default= '{"x":0,"y":0,"height":30,"width":70}',
+    )
+
+class Player(models.Model):
+    json_text = models.TextField(
+        max_length=500,
+    )
 
 # ### EVENT INFO ###
 # class Event(Document):

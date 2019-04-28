@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import viewsets
-from ChillOut.serializers import UserSerializer, GroupSerializer
+from ChillOut.serializers import *
 
 
 class UserViewSet(viewsets.ModelViewSet):
@@ -18,3 +18,16 @@ class GroupViewSet(viewsets.ModelViewSet):
     queryset = Group.objects.all()
     serializer_class = GroupSerializer
 
+class EventViewSet(viewsets.ModelViewSet):
+    """
+    Event information json field.
+    """
+    queryset = Event.objects.all()
+    serializer_class = EventSerializer
+
+class PlayerViewSet(viewsets.ModelViewSet):
+    """
+    Event information json field.
+    """
+    queryset = Player.objects.all()
+    serializer_class = PlayerSerializer

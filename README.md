@@ -83,22 +83,43 @@ User's event list (rating / comment)
 ## Event
 
 	{
-		eid,
-		basic info: { name:, desc:, rating:, host:, },
-		filter info: { type:, time:, location:, },
-		ratings: [ { user (ref), username, rating, time} ],
-		comments: [ { user (ref), username, comment, time} ],
+		"eid": 0,
+		"basic_info": { 
+			"eventname": "Poker night", 
+			"desc": "Heinz College SA", 
+			"rating": 0, 
+			"host": "Shunqi", 
+		},
+		"filter_info": {
+			"type": "", 
+	        "time": "", 
+	        "location": "", 
+		},
+		"ratings": [ 
+			{"uid": 1, "username":"", "rating":0, "time":""} 
+		],
+		"comments": [ 
+			{"uid": 1, "username":"", "comment": "", "time":""} 
+		],
 	}
 
 
 ## User
 
 	{
-		uid,
-		basic info: {},
-		filter info: {},
-		ratings: [],
-		comments: [],
+		"uid": 1,
+		"basic_info": {
+			"username": "shunqi",
+		},
+		"filter_info": {
+			"gender": "m",
+		},
+		"ratings": [
+			{"eid": 0, "eventname":"", "rating":0, "time":""} 
+		],
+		"comments": [
+			{"eid": 0, "eventname":"", "comment":0, "time":""} 
+		],
 	}
 
 
