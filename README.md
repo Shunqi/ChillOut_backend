@@ -1,15 +1,15 @@
 
 # Pages
-Stream
-	Filter
-Add Event
-	Info
-	Loc
-View Event
-	rating
-	Comment
-Chat
-User Management
+Stream  
+	Filter  
+Add Event  
+	Info  
+	Loc  
+View Event  
+	rating  
+	Comment  
+Chat  
+User Management  
 
 
 # Naming Convension:
